@@ -1,11 +1,11 @@
-.ad {
+.aside {
     position: absolute;
     top: 462px;
     right: 91px;
 }
 
 
-.ad .ad-box{
+.aside .aside-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,10 +13,10 @@
     height: 86px;
     margin-bottom: 6px;
     background-color: rgb(69, 140, 177);
-    border-radius: 10px;
+    border-.asideius: 10px;
 }
 
-.ad .ad-box:hover {
+.aside .aside-box:hover {
     /* IE */
     opacity: 0.8;
     /* Moz + FF */
@@ -25,7 +25,7 @@
     filter: alpha(opacity=80);
 }
 
-.ad .ad-box p{
+.aside .aside-box p{
     position: relative;
     font-size: 16px;
     color: rgb(255, 255, 255);
