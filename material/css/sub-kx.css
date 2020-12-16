@@ -1,0 +1,98 @@
+.sub-kx {
+    height: 118px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 58px;
+    /* 测试用 */
+    /* margin-top: 300px; */
+}
+
+.sub-kx .sub-kx-item {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.sub-kx .sub-kx-item:hover {
+    /* IE */
+    opacity: 0.8;
+    /* Moz + FF */
+    -moz-opacity:0.8; 
+    /* 支持CSS3的浏览器 */
+    filter: alpha(opacity=80);
+    /* 显示子目录 */
+}
+/* START 下拉列表部分 */
+.sub-kx .sub-kx-item:hover .list-box {
+    display: block;
+}
+
+.sub-kx .sub-kx-item .list-box {
+    /* background-color: rgb(52, 123, 202); */
+    /* IE */
+    opacity: 0.8;
+    /* Moz + FF */
+    -moz-opacity:0.8; 
+    /* 支持CSS3的浏览器 */
+    filter: alpha(opacity=80);
+
+    width: 230px;
+    position: absolute;
+    bottom: 80px;
+    left: 42px;
+    text-align: center;
+    /* 测试用 */
+    display: none;
+
+    font-size: 16px;
+    color: #fff;
+    line-height: 3;
+}
+
+.sub-kx .sub-kx-item .list-box ul {
+    background-color: rgb(52, 123, 202);
+    /* background-color: var(--alpha-color); */
+}
+
+.sub-kx .sub-kx-item .list-box ul a p { 
+    color: #fff;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.sub-kx .sub-kx-item .list-box ul a p:hover { 
+    color: #fff;
+    background-color: var(--color);
+}
+
+.sub-kx .sub-kx-item .list-box .triangle-bottom {
+    margin: 0 auto;
+}
+/* END 下拉列表部分 */
+
+.sub-kx .sub-kx-item .sub-kx-btn {
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    background: url("../images/sub_kx_button.png") no-repeat;
+    background-size: 100%;
+    width: 313px;
+    height: 93px;
+    /* 里面块竖行居中*/
+    display: flex;
+    align-items: center;   
+    justify-content: center;   
+}
+
+.sub-kx .sub-kx-item .sub-kx-btn img {
+    width: 60px;
+    height: 60px;
+}
+
+.sub-kx .sub-kx-item .sub-kx-btn span {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 13px;
+}

@@ -1,0 +1,94 @@
+:root {
+    --color: #0057ab;
+    --alpha-color: #336ca6b0;
+    --font-family: "Microsoft YaHei";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.w1200 {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* Chalkduster字体 */
+@font-face {
+    font-family: 'Chalkduster';
+    src: url('../fonts/Chalkduster.eot');
+    src: url('../fonts/Chalkduster.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Chalkduster.woff2') format('woff2'),
+        url('../fonts/Chalkduster.woff') format('woff'),
+        url('../fonts/Chalkduster.ttf') format('truetype'),
+        url('../fonts/Chalkduster.svg#Chalkduster') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* 禹卫书法字体 */
+@font-face {
+    font-family: 'yuweij';
+    src: url('../fonts/yuweij.eot');
+    src: url('../fonts/yuweij.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/yuweij.woff2') format('woff2'),
+        url('../fonts/yuweij.woff') format('woff'),
+        url('../fonts/yuweij.ttf') format('truetype'),
+        url('../fonts/yuweij.svg#yuweij') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 一行省略 */
+.line-cliamp1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 两行省略 */
+.line-cliamp2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.alpha80 {
+    /* IE */
+    opacity: 0.8;
+    /* Moz + FF */
+    -moz-opacity: 0.8;
+    /* 支持CSS3的浏览器 */
+    filter: alpha(opacity=80);
+}
+
+.triangle-bottom {
+    width: 0px;
+    height: 0px;
+    /* width: 40px; */
+    /* height: 40px; */
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    border-width: 10px;
+    border-style: solid dashed dashed dashed;
+    border-color: rgb(52, 123, 202) transparent transparent transparent;
+}

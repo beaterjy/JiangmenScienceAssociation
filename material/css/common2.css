@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+
+}
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,img,span,i,a,em,strong,b,input,textarea,select,p { margin:0; padding:0; }
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+.w1200{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}

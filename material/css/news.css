@@ -1,0 +1,84 @@
+/*科协动态*/
+.news{
+    /* todo: del width */
+    width: 590px;   
+    height: 342px;
+    display: inline-block;
+    background-color: #fff;
+}
+.news .btn-detail-news{
+    height: 32px;
+    width: 590px;
+    /* padding-top: 10px; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* 前面的蓝色竖条 */
+.news .btn-detail-news .cft{
+    width: 10px;
+    height: 32px;
+    background-color: var(--color);
+    margin-left: 10px;
+    display: inline-block;
+}
+/* 标题 */
+.news .btn-detail-news .btn-group{
+    /* position: relative; */
+    /* bottom: 5px; */
+    height: 100%;
+    color: red;
+    line-height: 32px ;
+    margin-left: 15px;
+    margin-right: 440px;
+    font-size: 20px;
+    color: var(--color);
+    display: inline-block;
+}
+.news .btn-detail-news .more-news{
+    font-size: 14px;
+    display: inline-block;
+}
+
+
+.news .active-news{
+    height: 270px;
+    margin-top: 20px;
+    margin-bottom: 26px;
+}
+
+.news .active-news .detail-group {
+
+}
+
+.news .active-news .detail-group .active-news-title {
+    margin-top: 20px;
+}
+.news .active-news .detail-group .active-news-title a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+}
+.news .active-news .detail-group .active-news-title a:hover {
+    color: var(--color);
+}
+
+/*小圆点*/
+.active-news-title a i {
+    display: inline-block;
+    width: 12px;
+    height:12px;
+    background: #E4E5E7;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.news .active-news .detail-group .active-news-title a p{
+    margin-left: 15px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

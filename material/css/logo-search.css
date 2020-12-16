@@ -1,0 +1,98 @@
+.logo-search {
+    height: 250px;
+    position: relative;
+}
+
+.logo-search .logo {
+    position: relative;
+}
+
+.logo-search .logo .kx-logo .logo-shadow {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 15px 9px 0px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 545px;
+    top: -55px;
+    width: 110px;
+    height: 110px;
+    z-index: 171;
+}
+
+
+.logo-search .logo .kx-logo .logo-image {
+    background-image: url("../images/kx-logo.png");
+    position: absolute;
+    left: 555px;
+    top: -45px;
+    width: 91px;
+    height: 91px;
+    z-index: 172; 
+}
+
+.logo-search .logo .kx-name {
+    width: 398px;
+    margin: 0 auto;
+    padding-top: 73px;
+    color: #0051a2;
+    text-align: center;
+}
+
+
+.logo-search .logo .kx-name .name-cn {
+    font-size: 36px;
+    font-family: "STLiti";
+    letter-spacing: 8px;
+}
+
+.logo-search .logo .kx-name .name-en {
+    font-size: 12px;
+    font-family: Chalkduster;
+}
+
+
+.logo-search .search-box {
+    width: 453px;
+    height: 42px;
+    border-width: 1px;
+    border-color: rgb(235, 235, 235);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    /* left: 731px;
+    top: 260px; */
+    margin: 0 auto;
+    border-radius: 21px;
+    line-height: 42px;
+    margin-top: 28px;
+}
+
+.logo-search .search-box .search-text {
+    border: none;
+    background: none;
+    outline: none;
+    width: 400px;
+    height: 42px;
+    padding-left: 13px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(204, 204, 204);
+}
+
+.logo-search .search-box .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+}
+
+.logo-search .search-box .search-btn img {
+    width: 18px;
+    height: 24px;
+    line-height: 42px;
+    margin-top: 10px;
+}

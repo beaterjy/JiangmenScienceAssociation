@@ -1,0 +1,30 @@
+/*头部图片展示*/
+.topic-list{
+    position: relative;
+
+    height: 145px;
+
+}
+.topic-list .topic-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topic-images-show{
+    display: inline-block;
+    background-color: #ffffff;
+    height:120px ;
+    width: 376px;
+    border-width:2px 2px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+.topic-images-show a img {
+    height: 120px;
+    width: 376px;
+}
+#images-show{
+    /* margin: 0 25px; */
+}
+
+

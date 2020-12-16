@@ -1,0 +1,82 @@
+
+.pic-show {
+    width: 590px;
+    height: 342px;
+    background-color: var(--color);
+    /* 水平居中 */
+    position: relative;
+    display: inline-block;
+
+}
+
+.pic-show .pic>img {
+    width: 590px;
+    height: 342px;
+}
+
+.pic-show .pic-title {
+    width: 590px;
+    height: 53px;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 53px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.pic-show .pic-title a {
+    width: 582px;
+    height: 53px;
+    padding-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+}
+
+.pic-show .pic-title a:hover {
+    /* IE */
+    opacity: 0.8;
+    /* Moz + FF */
+    -moz-opacity:0.8; 
+    /* 支持CSS3的浏览器 */
+    filter: alpha(opacity=80)
+}
+
+.pic-show .pic-datelist {
+    width: 60px;
+    height: 289px;
+    /* background-color: ; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pic-show .pic-datelist .pic-date {
+    width: 60px;
+    height: 47px;
+    background-color: var(--alpha-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.pic-show .pic-datelist .pic-date:hover {
+    background-color: rgba(66, 66, 66, 0.4);
+}
+
+.pic-show .pic-datelist .pic-date .day {
+    font-size: 16px;
+    text-align: center;
+}
+
+.pic-show .pic-datelist .pic-date .year-month {
+    font-size: 10px;
+    text-align: center;
+}

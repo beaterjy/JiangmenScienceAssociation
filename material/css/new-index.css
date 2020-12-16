@@ -1,0 +1,11 @@
+body {
+    background: url("../images/total-bg.png");
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    z-index: -999;
+}
+
+.header {
+
+}

@@ -1,0 +1,33 @@
+.ad {
+    position: absolute;
+    top: 462px;
+    right: 91px;
+}
+
+
+.ad .ad-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 79px;
+    height: 86px;
+    margin-bottom: 6px;
+    background-color: rgb(69, 140, 177);
+    border-radius: 10px;
+}
+
+.ad .ad-box:hover {
+    /* IE */
+    opacity: 0.8;
+    /* Moz + FF */
+    -moz-opacity: 0.8;
+    /* 支持CSS3的浏览器 */
+    filter: alpha(opacity=80);
+}
+
+.ad .ad-box p{
+    position: relative;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
