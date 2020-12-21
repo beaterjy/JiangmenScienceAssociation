@@ -1,0 +1,364 @@
+/*头部*/
+.header{
+    /*width: 100%;*/
+    height: 605px;
+    background-image: url("../images/bg.png")  ;
+    background-repeat: no-repeat;
+
+
+}
+/*导航栏*/
+.nav .nav-show-right{
+    display: inline-block;
+}
+.nav .nav-show-left{
+    display: inline-block;
+    margin-right: 300px;
+}
+.nav .nav-show-left .nav-choose{
+    position: relative;
+    font-size: 20px;
+    height: 116px;
+    width: 127px;
+    color: #0051a2;
+    display: inline-block;
+    text-align: center;
+}
+.nav .nav-show-left .nav-choose a{
+    line-height: 99px;
+}
+.nav .nav-show-right .nav-choose{
+    position: relative;
+    font-size: 20px;
+    height: 116px;
+    width:114px ;
+
+    display: inline-block;
+    text-align: center;
+}
+.nav .nav-show-right .nav-choose a{
+    line-height: 99px;
+}
+#one{
+    margin-right: 11px;
+}
+#tow{
+    margin: 0 11px;
+}
+.nav-choose:hover{
+    background:#0051a2;
+}
+/*科协logo*/
+
+
+
+/*头部图片展示*/
+.topic-list{
+    position: relative;
+
+    height: 145px;
+
+}
+.topic-images-show{
+    display: inline-block;
+    height:120px ;
+    width: 376px;
+    border-width:3px 2px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+#images-show{
+    margin: 0 25px;
+}
+
+/*头条新闻*/
+/*.news-logo{*/
+/*    float: left;*/
+/*}*/
+.headline-news{
+    /*position: absolute;*/
+    /*top: -100px;*/
+    height: 114px;
+    background-image: url("../images/头条条.png");
+
+
+    /*border: 0.1px solid red;*/
+}
+/*头条新闻题目*/
+.news-title {
+    /*width:1050px;*/
+
+    position: relative;
+    /*top: 25px;*/
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 24px;
+    color: #0051a2;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+/*头条文本*/
+.news-text p{
+
+    width: 1080px;
+    font-size: 16px;
+    font-family:微软雅黑;
+    margin-left: 33px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#detail{
+    position: relative;
+    left: 2px;
+    font-family:微软雅黑;
+    font-size: 16px;
+    color: red;
+
+}
+.main-news{
+    /*height: 400px;*/
+    background-color: pink;
+}
+/*图片展示*/
+.pic-show {
+    /*position: absolute;*/
+
+    display: inline-block;
+    width: 590px;
+    height: 342px;
+    background-color: #0051a2;
+    /* 水平居中 */
+    /*margin: 0 auto;*/
+    position: relative;
+}
+
+.pic-show .pic>img {
+    width: 590px;
+    height: 342px;
+}
+
+.pic-show .pic-title {
+    width: 590px;
+    height: 53px;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 53px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.pic-show .pic-title a {
+    width: 582px;
+    height: 53px;
+    padding-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+}
+
+.pic-show .pic-title a:hover {
+    /* IE */
+    opacity: 0.8;
+    /* Moz + FF */
+    -moz-opacity:0.8;
+    /* 支持CSS3的浏览器 */
+    filter: alpha(opacity=80)
+}
+
+.pic-show .pic-datelist {
+    width: 60px;
+    height: 289px;
+    /* background-color: ; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pic-show .pic-datelist .pic-date {
+    width: 60px;
+    height: 47px;
+    background-color: #336ca6b0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.pic-show .pic-datelist .pic-date:hover {
+    background-color: rgba(66, 66, 66, 0.4);
+}
+
+.pic-show .pic-datelist .pic-date .day {
+    font-size: 16px;
+    text-align: center;
+}
+
+.pic-show .pic-datelist .pic-date .year-month {
+    font-size: 10px;
+    text-align: center;
+}
+/*科协动态*/
+.main-news .news{
+    position: relative;
+    left: 16px;
+    bottom:30px;
+    width: 590px;
+    height: 342px;
+    background-color: white;
+    display: inline-block;
+    /*border: 0.1px solid red;*/
+}
+.news .btn-detail-news{
+    height: 38px;
+    width: 590px;
+}
+.news .btn-detail-news .cft{
+    width: 10px;
+    height: 32px;
+    background-color: #0051a2;
+    margin-top: 6px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.news .btn-detail-news .btn-group{
+    position: relative;
+    bottom: 5px;
+    line-height:30px ;
+    margin-left: 16px;
+    font-size: 20px;
+    color: #0051a2;
+    display: inline-block;
+}
+.news .btn-detail-news .more-news{
+    position: relative;
+    font-size: 14px;
+    bottom: 5px;
+    margin-left: 400px;
+    display: inline-block;
+}
+.news .active-news .detail-group .active-news-title{
+    font-size: 16px;
+    font-family:微软雅黑;
+}
+
+
+.news .active-news{
+    position: relative;
+    width: 526px;
+    height: 270px;
+    top: 26px;
+    left: 35px;
+    right: 12px;
+   bottom: 25px;
+}
+/*小圆点*/
+.active-news-title a i {
+    position: relative;
+    right: 25px;
+    bottom: 11px;
+    display: inline-block;
+    width: 12px;
+    height:12px;
+    background: #E4E5E7;
+    border-radius: 50%;
+
+}
+.news .active-news .detail-group .active-news-title p{
+    display: inline-block;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    right: 9px;
+    line-height:35px ;
+}
+
+/*轮播图*/
+/*.pic-show{*/
+/*    width: 590px;*/
+/*    height: 392px;*/
+/*    background-image: url("../images/轮播图.png");*/
+/*    display: inline-block;*/
+/*}*/
+/*.data-show{*/
+/*    height: 366px;*/
+/*    width: 47px;*/
+/*    float: right;*/
+/*}*/
+/*.date-box{*/
+/*    width:60px ;*/
+/*    height: 47px;*/
+/*    !*border: 1px solid red*!*/
+/*}*/
+/*.day{*/
+/*    font-size: 16px;*/
+
+/*}*/
+/*.date{*/
+/*    font-size: 10px;*/
+/*}*/
+
+
+/*尾部footer*/
+/*.footer {*/
+/*    position: relative;*/
+/*    height: 157px;*/
+/*    background: #0051a2;*/
+/*}*/
+
+/*!* footer里面的所有超链接都是白色 *!*/
+/*.footer a {*/
+/*    color: #fff;*/
+/*}*/
+
+/*!* footer里面所有字体默认是16px和白色 *!*/
+/*.footer .foot-wrap {*/
+/*    height: 100%;*/
+/*    position: relative;*/
+/*    font-size: 16px;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.footer .foot-wrap .foot-site {*/
+/*    margin: auto;*/
+/*    width: 30%;*/
+/*    height: 100%;*/
+/*    float: left;*/
+/*    padding-top: 18px;*/
+/*}*/
+
+
+
+/*.footer .foot-wrap .foot-logo {*/
+/*    position: absolute;*/
+/*    top: 46px;*/
+/*    left: 560px;*/
+/*}*/
+
+/*.footer .foot-wrap .foot-logo img {*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*}*/
+
+
+/*.footer .foot-wrap .foot-text {*/
+/*    margin-top: 60px;*/
+/*    margin-right: 50px;*/
+/*    float: right;*/
+/*    width: 30%;*/
+/*    font-size: 36px;*/
+/*    font-family: yuweij;*/
+/*}*/

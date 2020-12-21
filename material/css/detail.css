@@ -1,0 +1,94 @@
+/* 详细内容样式 */
+.detail {
+    position: relative;
+    z-index: 51;
+}
+.detail a {
+    /* detail 默认a标签颜色为灰色 */
+    color: rgb(110, 110, 110);
+}
+.detail .data-wrap {
+    /* height: 2000px; */
+}
+
+/* 详细内容 -- 头部样式 */
+.detail .data-wrap .detail-header {
+    border-top: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px dashed rgb(218, 218, 218);
+}
+
+.detail .data-wrap .detail-header .detail-title p {
+
+    margin-top: 41px;
+    margin-bottom: 52px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(0, 81, 162);
+    font-size: 30px;
+}
+
+.detail .data-wrap .detail-header .detail-mess {
+    margin-bottom: 33px;
+    text-align: center;
+    color: rgb(110, 110, 110);
+    font-size: 14px;
+}
+.detail .data-wrap .detail-header .detail-mess span{
+    margin-left: 14px;
+}
+.detail .data-wrap .detail-header .detail-mess span #bigger:hover,
+.detail .data-wrap .detail-header .detail-mess span #normal:hover,
+.detail .data-wrap .detail-header .detail-mess span #smaller:hover,
+.detail .data-wrap .detail-header .detail-mess span #print:hover{
+        color: rgb(0, 81, 162);
+}
+
+/* 详细内容 -- 主体样式 */
+.detail .data-wrap .detail-content p {
+    margin-top: 26px;
+    margin-bottom: 46px;
+    line-height: 36px;
+    text-indent: 2em;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+}
+
+/* 详细内容 -- 尾部样式 */
+.detail .data-wrap .detail-footer {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.detail .data-wrap .detail-footer .next-detail {
+    display: flex;
+    position: relative;
+}
+.detail .data-wrap .detail-footer .next-detail:hover .cft{
+    display: inline-block;
+}
+.detail .data-wrap .detail-footer .next-detail:hover a p{
+    color: rgb(0, 81, 162);
+}
+
+/* 前面的蓝色竖条 */
+.detail .data-wrap .detail-footer .next-detail .cft {
+    /* 默认隐藏 */
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 25px;
+    background-color: #0051a2;
+}
+
+.detail .data-wrap .detail-footer .next-detail a p {
+    height: 25px;
+    line-height: 25px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: rgb(110, 110, 110);
+}

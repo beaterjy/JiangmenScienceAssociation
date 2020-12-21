@@ -1,0 +1,101 @@
+/* 头部导航的样式 */
+.header-nav {
+    height: 115px;
+    background-color:#0051a2;
+    z-index: 100;
+}
+
+.header-nav .hurdle-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav .hurdle-box .hurdle-logo,
+.header-nav .hurdle-box .hurdle-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+}
+
+/* 左边logo样式 */
+.header-nav .hurdle-box .hurdle-logo .logo-icon img {
+    width: 75px;
+    height: 75px;
+}
+
+.header-nav .hurdle-box .hurdle-logo a .logo-text {
+    margin-left: 14px;
+}
+.header-nav .hurdle-box .hurdle-logo a .logo-text .text-cn {
+    color: white;
+    font-family: 华文隶书;
+    font-size: 36px;
+    letter-spacing: 8px;
+}
+
+.header-nav .hurdle-box .hurdle-logo a .logo-text .text-en {
+    color: white;
+    font-family: "Chalkduster";
+    /* font-size: xx-small; */
+    font-size: 5px;
+}
+
+/* 右边导航栏nav样式 */
+.header-nav .hurdle-box .hurdle-nav .nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item {
+    position: relative;
+}
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item:hover{
+    background-color: #003f7d;
+}
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item:hover a ul{
+    display: block;
+}
+
+
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item a {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item a p {
+    width: 100px;
+    line-height: 115px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item a .nav-name.w4 {
+    letter-spacing: 0px;
+}
+
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item a ul {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 115px;
+    background-color: #7fa8d0; 
+    display: none;
+    /* 首部下面的元素设置z-index为100，因此当前设置要比100大 */
+    z-index: 105;
+}
+
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item a ul li{
+    width: 90px;
+    margin: 13px auto;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item a ul li:hover{
+    border-radius: 10px;
+    background-color: #3374b4;
+}

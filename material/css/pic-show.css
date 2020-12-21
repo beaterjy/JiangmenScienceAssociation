@@ -2,7 +2,7 @@
 .pic-show {
     width: 590px;
     height: 342px;
-    background-color: var(--color);
+    background-color: #0051a2;
     /* 水平居中 */
     position: relative;
     display: inline-block;
@@ -60,7 +60,7 @@
 .pic-show .pic-datelist .pic-date {
     width: 60px;
     height: 47px;
-    background-color: var(--alpha-color);
+    background-color: #336ca6b0;
     display: flex;
     flex-direction: column;
     justify-content: center;

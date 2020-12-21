@@ -53,7 +53,7 @@
 
 .sub-kx .sub-kx-item .list-box ul {
     background-color: rgb(52, 123, 202);
-    /* background-color: var(--alpha-color); */
+    /* background-color: #336ca6b0; */
 }
 
 .sub-kx .sub-kx-item .list-box ul a p { 
@@ -65,7 +65,7 @@
 }
 .sub-kx .sub-kx-item .list-box ul a p:hover { 
     color: #fff;
-    background-color: var(--color);
+    background-color: #0051a2;
 }
 
 .sub-kx .sub-kx-item .list-box .triangle-bottom {

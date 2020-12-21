@@ -1,7 +1,7 @@
 .aside {
-    position: absolute;
-    top: 462px;
-    right: 91px;
+    position: fixed;
+    top: 50%;
+    right: 3%;
 }
 
 
@@ -13,7 +13,7 @@
     height: 86px;
     margin-bottom: 6px;
     background-color: rgb(69, 140, 177);
-    border-.asideius: 10px;
+    border-radius: 10px;
 }
 
 .aside .aside-box:hover {

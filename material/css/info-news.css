@@ -27,15 +27,27 @@
 
 /* START 通知公告特别样式 */
 .info-news .info .data-wrap .content-list .content-item {
-    height: 75px;
+    height: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.info-news .info .data-wrap .content-list .content-item a p {
-    line-height: 30px;
+
+.info-news .info .data-wrap .content-list .content-item a{
+    height: 60px;
 }
 .info-news .info .data-wrap .content-list .content-item a::before {
     position: absolute;
     left: 2px;
-    top: 15px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-news .info .data-wrap .content-list .content-item a p {
+    line-height: 30px;
 }
 /* END 通知公告特别样式 */
 
@@ -68,7 +80,7 @@
     text-align: center;
     border-radius: 32px;
     color: #fff;
-    background-color: var(--color);
+    background-color: #0051a2;
 }
 
 .info-news .news-block .base-link .btn-theme .btn-text:hover, .btn-more:hover {
@@ -100,19 +112,19 @@
 
 .info-news .news-block .content-list .content-item {
     position: relative;
-    height: 60px;
+    height: 65px;
 }
 
 .info-news .news-block .content-list .content-item a {
     display: block;
     height: 100%;
-    line-height: 60px;
+    line-height: 65px;
     font-size: 16px;
     color: #333;
 }
 
 .info-news .news-block .content-list .content-item a:hover {
-    color: var(--color);
+    color: #0051a2;
 }
 
 .info-news .news-block .data-wrap .content-list .content-item a p {

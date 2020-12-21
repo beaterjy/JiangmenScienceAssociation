@@ -1,2 +1,2 @@
 # JiangmenScienceAssociation
-江门科协前端页面设计开发
+江门科协前端页面开发

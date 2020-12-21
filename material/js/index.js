@@ -1,89 +1,64 @@
 // 图片数据
-var imgs = [{
-        "src": "./material/images/1.png"
-    },
-    {
-        "src": "./material/images/2.jpg"
-    },
-    {
-        "src": "./material/images/3.jpg"
-    },
-    {
-        "src": "./material/images/4.jpg"
-    },
-    {
-        "src": "./material/images/5.jpg"
-    },
-    {
-        "src": "./material/images/6.jpg"
-    }
-];
-// 定时器1s
-var timer = setInterval("convertImage(imgs)", 1000);
-// 公共变量index，代表当前显示的图片索引位置
+var images = ["./material/images/1.png",
+    "./material/images/2.jpg",
+    "./material/images/3.jpg", "./material/images/4.jpg", "./material/images/5.jpg", "./material/images/6.jpg"
+]
+// 对应文本数据
+var text = ["台山市科协开展2020年台山市全国科协日系列活动", "图片1", "图片2", "图片3", "图片4", "图片5"];
+// 公共变量index，代表当前显示图片的索引位置
 var index = 0;
-// 默认选中第一张图片
-$($(".pic-show .pic-datelist .pic-date")[0]).css({
-    "background-color": "#42424266" // 选中颜色
+// 开始选中第一个菜单项
+$($(".pic-date")[index]).css({
+    "background-color": "rgba(66, 66, 66, 0.4)"
+});
+// 定时器
+var timeId = setInterval("converImg(images)", 1000);
+
+// 给菜单项添加id属性和绑定鼠标事件
+$(document).ready(function () {
+    var dates = $(".pic-date");
+    for (var i = 0; i < dates.length; i++) {
+        dates[i].id = i;
+    }
+
+    for (var i = 0; i < dates.length; i++) {
+        // 鼠标移入事件
+        $(dates[i]).mouseover(function () {
+            clearInterval(timeId);
+            index = this.id;
+            converImg(images);
+        });
+        // 鼠标移出事件
+        $(dates[i]).mouseout(function () {
+            timeId = setInterval("converImg(images)", 1000);
+        });
+    }
 })
-// 为菜单项添加id属性
-initMenuAddID()
-// 初始化菜单绑定
-initMenuBind();
 
-// 切换图片ing
-function convertImage(data) {
-    // 获取图片标签元素对象
-    var img = $(".pic-show .pic img");
-    // 更新图片
-    img.attr({
-        "src": data[index].src
+function converImg(data) {
+    // 更新选中图片
+    $(".pic-img").attr({
+        "src": data[index]
     });
-
-    // 去掉前一个菜单项的选中效果，设置为原颜色
-    var menus = $(".pic-show .pic-datelist .pic-date");
-    // 更新图片上的菜单项
-    $(menus[index]).css({
-        "background-color": "#42424266" // 选中颜色
+    var a = $(".pic-title>a");
+    var date = $(".pic-date");
+    // 更新图片标题文字
+    $(a).text(text[index]);
+    // 更新菜单项选中颜色
+    $(date[index]).css({
+        "background-color": "rgba(66, 66, 66, 0.4)"
     });
-    // 去掉没被轮播的菜单项背景色
+    // 将没被选中的菜单项显示为原颜色
     for (var i = 0; i < data.length; i++) {
         if (i != index) {
-            $(menus[i]).css({
-                "background-color": "#336ca6b0" // 原颜色
+            $(date[i]).css({
+                "background-color": "#336ca6b0"
             });
         }
     }
-
-    index = (index + 1) % data.length;
-}
-
-// 给菜单项绑定事件
-function initMenuBind() {
-    var menus = $(".pic-show .pic-datelist .pic-date");
-
-    for (var i = 0; i < menus.length; i++) {
-        // 鼠标移入事件
-        $(menus[i]).mouseover(function () {
-            // 取消定时器
-            clearInterval(timer);
-            // 选中菜单项对应的index，进而选中图片
-            index = this.id;
-            convertImage(imgs);
-        })
-
-        // 鼠标移出事件
-        $(menus[i]).mouseout(function () {
-            timer = setInterval("convertImage(imgs)", 1000);
-        })
+    if (index >= data.length - 1) {
+        index = 0;
+    } else {
+        index++;
     }
-}
-
-// 为每个菜单项添加id属性
-function initMenuAddID() {
-    var menus = $(".pic-show .pic-datelist .pic-date");
-    for (var i = 0; i < menus.length; i++) {
-        menus[i].id = i;
-    }
-
 }

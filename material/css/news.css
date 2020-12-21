@@ -20,7 +20,7 @@
 .news .btn-detail-news .cft{
     width: 10px;
     height: 32px;
-    background-color: var(--color);
+    background-color: #0051a2;
     margin-left: 10px;
     display: inline-block;
 }
@@ -34,7 +34,7 @@
     margin-left: 15px;
     margin-right: 440px;
     font-size: 20px;
-    color: var(--color);
+    color: #0051a2;
     display: inline-block;
 }
 .news .btn-detail-news .more-news{
@@ -63,7 +63,7 @@
     color: black;
 }
 .news .active-news .detail-group .active-news-title a:hover {
-    color: var(--color);
+    color: #0051a2;
 }
 
 /*小圆点*/

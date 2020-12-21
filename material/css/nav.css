@@ -4,12 +4,6 @@
     width: 100%;
     position: relative;
     /* z-index取值需要大于nav的取值，使得下拉菜单可触碰 */
-    /* IE */
-    opacity: 0.8;
-    /* Moz + FF */
-    -moz-opacity: 0.8;
-    /* 支持CSS3的浏览器 */
-    filter: alpha(opacity=80);
     z-index: 100;
 }
 
@@ -26,7 +20,7 @@
     position: relative;
     font-size: 20px;
     width: 127px;
-    color: var(--color);
+    color: #0051a2;
     display: inline-block;
     text-align: center;
 }
@@ -48,7 +42,7 @@
 
 #one {
     margin-right: 11px;
-    background-color: var(--color);
+    background-color: #0051a2;
 }
 #one a {
     color: white;
@@ -60,7 +54,7 @@
 
 .nav .nav-show-left .nav-choose:hover,
 .nav .nav-show-right .nav-choose:hover {
-    background-color: var(--color); 
+    background-color: #0051a2; 
 }
 
 /* 触发颜色变白 */
@@ -82,7 +76,7 @@
     left: 0;
     top: 117px;
     width: 100%;
-    background-color: var(--alpha-color);
+    background-color: #7ba3cc;
     text-align: center;
     display: none;
 }
@@ -112,7 +106,7 @@
 }
 .nav .nav-show-left .nav-choose .nav-item-list li a p:hover,
 .nav .nav-show-right .nav-choose .nav-item-list li a p:hover {
-    background-color: var(--color);
+    background-color: #3172b3;
     border-radius: 17px;
 }
 /* START 导航栏下拉菜单样式 */
