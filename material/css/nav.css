@@ -66,6 +66,12 @@
 .nav .nav-show-left .nav-choose:hover .nav-item-list,
 .nav .nav-show-right .nav-choose:hover .nav-item-list {
     display: block;
+   /* IE */
+    opacity: 0.8;
+    /* Moz + FF */
+    -moz-opacity: 0.8;
+    /* 支持CSS3的浏览器 */
+    filter: alpha(opacity=80);
 }
 
 
@@ -106,7 +112,8 @@
 }
 .nav .nav-show-left .nav-choose .nav-item-list li a p:hover,
 .nav .nav-show-right .nav-choose .nav-item-list li a p:hover {
-    background-color: #3172b3;
+    background-color: #0051a2;
     border-radius: 17px;
+
 }
 /* START 导航栏下拉菜单样式 */

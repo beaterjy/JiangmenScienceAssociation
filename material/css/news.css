@@ -65,6 +65,10 @@
 .news .active-news .detail-group .active-news-title a:hover {
     color: #0051a2;
 }
+/* 小圆点hover更新颜色 */
+.news .active-news .detail-group .active-news-title a:hover i{
+    background-color: #0051a2;
+}
 
 /*小圆点*/
 .active-news-title a i {
