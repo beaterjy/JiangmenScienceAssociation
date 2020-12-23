@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./material/css/link-bread.css">
     <link rel="stylesheet" href="./material/css/detail.css">
     <link rel="stylesheet" href="./material/css/footer.css">
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./material/js/detail.js"></script>
 </head>
 
 <body>
@@ -29,6 +31,7 @@
                 </a>
             </div>
             <!-- END 左侧logo和标题文字 -->
+
             <!-- START 右侧导航栏 -->
             <div class="hurdle-nav">
                 <div class="nav-box">
@@ -40,75 +43,245 @@
                     <div class="nav-item">
                         <a href="#">
                             <p class="nav-name">新闻</p>
-                            <ul class="item-list">
-                                <li>科协动态</li>
-                                <li>地方动态</li>
-                                <li>通知公告</li>
-                            </ul>
                         </a>
+                        <ul class="item-list">
+                            <li><a href="#">
+                                    <p>头条新闻</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>科协动态</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>地方动态</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>通知公告</p>
+                                </a></li>
+                        </ul>
                     </div>
                     <div class="nav-item">
                         <a href="#">
                             <p class="nav-name w4">科协全景</p>
-                            <ul class="item-list">
-                                <li>科协简介</li>
-                                <li>中国科协章程</li>
-                                <li>科协会徽</li>
-                                <li>组织机构</li>
-                                <li>领导信息</li>
-                                <li>政策法规</li>
-                                <li>重要文件</li>
-                                <li>科协年鉴</li>
-                                <li>保密宣传</li>
-                                <li>财政预决算</li>
-                            </ul>
                         </a>
+                        <ul class="item-list">
+                            <li><a href="#">
+                                    <p>科协简介</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>中国科协章程</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>科协会徽</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>组织机构</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>领导信息</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>政策法规</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>重要文件</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>科协年鉴</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>保密宣传</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>财政预决算</p>
+                                </a></li>
+                        </ul>
                     </div>
                     <div class="nav-item">
                         <a href="#">
                             <p class="nav-name">智库</p>
-                            <ul class="item-list">
-                                <li>科协专家库</li>
-                                <li>五邑籍院士</li>
-                                <li>科技志愿服务队</li>
-                            </ul>
                         </a>
+                        <ul class="item-list">
+                            <li><a href="#">
+                                    <p>科协专家库</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>五邑籍院士</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>科技志愿服务队</p>
+                                </a></li>
+                        </ul>
                     </div>
                     <div class="nav-item">
                         <a href="#">
                             <p class="nav-name">学术</p>
-                            <ul class="item-list">
-                                <li>学会之窗</li>
-                                <li>政策文件</li>
-                                <li>学术活动</li>
-                                <li>科普活动</li>
-                                <li>科技服务</li>
-                                <li>组织建设</li>
-                                <li>学会资助</li>
-                                <li>学会荣誉</li>
-                            </ul>
                         </a>
+                        <ul class="item-list">
+                            <li><a href="#">
+                                    <p>学会之窗</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>政策文件</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>学术活动</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>科普活动</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>科技服务</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>组织建设</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>学会资助</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>学会荣誉</p>
+                                </a></li>
+                        </ul>
                     </div>
                     <div class="nav-item">
                         <a href="#">
                             <p class="nav-name">科普</p>
-                            <ul class="item-list">
-                                <li>科普1</li>
-                                <li>科普2</li>
-                                <li>科普3</li>
-                            </ul>
                         </a>
+                        <ul class="item-list">
+                            <li><a href="#">
+                                    <p>政策文件</p>
+                                </a></li>
+                            <li>
+                                <a href="#">
+                                    <p>基层科普</p>
+                                </a>
+                                <ul class="sub-item-list">
+                                    <li><a href="#">
+                                            <p>科普中国e站</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>社区科普大学</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>科学教育特色学校</p>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>科普基地</p>
+                                </a>
+                                <ul class="sub-item-list">
+                                    <li><a href="#">
+                                            <p>科普教育基地</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>农村科普示范基地</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>基地科普游</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>政策法规</p>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p></p>
+                                <a href="#">
+                                    <p>科普项目</p>
+                                </a>
+                                <ul class="sub-item-list">
+                                    <li><a href="#">
+                                            <p>科普惠农计划</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>科普信息化</p>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>青少年科普</p>
+                                </a>
+                                <ul class="sub-item-list">
+                                    <li><a href="#">
+                                            <p>政策文件</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>科普学校</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>科技竞赛</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>科教活动</p>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>科普之窗</p>
+                                </a>
+                                <ul class="sub-item-list">
+                                    <li><a href="#">
+                                            <p>科学之门</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>病虫害图谱</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>非典&禽流感</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>身边科普知识</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>科技博览</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>食品安全知识</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>青少年科普</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>农业科普</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>气象科普</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>防震减灾</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>垃圾分类</p>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <p>新冠肺炎</p>
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                     <div class="nav-item">
                         <a href="#">
                             <p class="nav-name">党建</p>
-                            <ul class="item-list">
-                                <li>党务动态</li>
-                                <li>党组织设置</li>
-                                <li>制度法规</li>
-                                <li>主题教育</li>
-                            </ul>
                         </a>
+                        <ul class="item-list">
+                            <li><a href="#">
+                                    <p>党务动态</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>党组织设置</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>制度法规</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>主题教育</p>
+                                </a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -60,7 +60,7 @@
     background-color: #003f7d;
 }
 
-.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item:hover a ul {
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item:hover ul {
     display: block;
 }
 
@@ -83,14 +83,15 @@
     letter-spacing: 0px;
 }
 
-.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item a ul {
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item ul {
     width: 100%;
     text-align: center;
     position: absolute;
     left: 0;
-    top: 116px;
+    top: 115px;
+    padding-top: 15px;
     background-color: #7ba3cc;
-   /* IE */
+    /* IE */
     opacity: 0.8;
     /* Moz + FF */
     -moz-opacity: 0.8;
@@ -101,14 +102,45 @@
     z-index: 105;
 }
 
-.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item a ul li {
-    width: 90px;
-    margin: 13px auto;
-    padding-top: 9px;
-    padding-bottom: 9px;
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item ul li {
+    position: relative;
+    width: 100%;
 }
 
-.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item a ul li:hover {
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item ul li a p {
+    width: 90px;
+    margin: 4px auto;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: normal;
+}
+
+
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item ul li a p:hover {
     border-radius: 10px;
     background-color: #0051a2;
+}
+
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item ul li:hover .sub-item-list {
+    display: block;
+}
+
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item ul li .sub-item-list {
+    width: 100%;
+    /* 修正 */
+    padding-top: 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.header-nav .hurdle-box .hurdle-nav .nav-box .nav-item ul li .sub-item-list li p {
+    position: relative;
+    width: 90px;
+    margin: 4px auto;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
